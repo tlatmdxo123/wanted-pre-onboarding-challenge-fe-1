@@ -4,13 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import Auth from '@components/Auth'
 import './index.css'
 
 const router = createBrowserRouter([
   { path: '/', element: <div>hello</div> },
   {
     path: '/auth',
-    element: <div>auth</div>
+    element: <Auth/>
   }
 ])
 
