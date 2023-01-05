@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { UseFormRegisterReturn } from 'react-hook-form'
-import { isNullish } from '../../utils/common'
+import { isNullish } from '@utils/common'
 
 type InputProps = {
   label?: string
