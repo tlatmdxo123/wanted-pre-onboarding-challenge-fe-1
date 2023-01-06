@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Auth from '@components/Auth'
+import Todo from '@components/Todo'
 import './index.css'
 
 const queryClient = new QueryClient()
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/auth',
     element: <Auth/>
+  },
+  {
+    path: '/todos',
+    element: <Todo/>
   }
 ])
 
