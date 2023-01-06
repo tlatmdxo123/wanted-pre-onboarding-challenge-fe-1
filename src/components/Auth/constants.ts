@@ -4,3 +4,5 @@ export const authType = {
   signUp: 0,
   login: 1
 } as const
+
+export const tokenKey = 'user_token_key'
