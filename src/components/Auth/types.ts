@@ -3,7 +3,7 @@ export interface AuthInfo {
   password: string
 }
 
-export interface SignUpResult {
+export interface AuthSuccessResponse {
   message: string
   token: string
 }

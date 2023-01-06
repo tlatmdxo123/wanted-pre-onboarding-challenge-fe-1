@@ -1,7 +1,7 @@
 import fetcher from '@utils/fetcher'
-import { AuthInfo, SignUpResult } from '@components/Auth/types'
+import { AuthInfo, AuthSuccessResponse } from '@components/Auth/types'
 
 export const authApi = {
-  login: async (payload: AuthInfo) => await fetcher.post('/users/login', payload),
-  signUp: async (payload: AuthInfo) => await fetcher.post<SignUpResult, any>('/users/create', payload)
+  login: async (payload: AuthInfo) => await fetcher.post<AuthSuccessResponse, any>('/users/login', payload),
+  signUp: async (payload: AuthInfo) => await fetcher.post<AuthSuccessResponse, any>('/users/create', payload)
 }
