@@ -8,6 +8,7 @@ module.exports = {
     'standard-with-typescript'
   ],
   overrides: [
+
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -18,5 +19,6 @@ module.exports = {
     'react'
   ],
   rules: {
+    '@typescript-eslint/no-misused-promises': 0
   }
 }

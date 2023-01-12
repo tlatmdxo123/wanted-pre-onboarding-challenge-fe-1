@@ -1,6 +1,7 @@
 import fetcher from '@utils/fetcher'
-import { TodosResponse } from '@components/Todo/types'
+import { TodoCreateResponse, TodoCreateType, TodosResponse } from '@components/Todo/types'
 
 export const todoApi = {
-  getTodos: async () => await fetcher.get<TodosResponse>('/todos')
+  getTodos: async () => await fetcher.get<TodosResponse>('/todos'),
+  createTodo: async (todo: TodoCreateType) => await fetcher.post<TodoCreateResponse>('/todos', todo)
 }

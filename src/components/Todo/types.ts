@@ -9,3 +9,12 @@ export interface TodoItemType {
 export interface TodosResponse {
   data: TodoItemType[]
 }
+
+export interface TodoCreateType {
+  title: string
+  content: string
+}
+
+export interface TodoCreateResponse {
+  data: TodoItemType
+}
