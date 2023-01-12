@@ -7,7 +7,7 @@ interface TodosHook {
   todos: TodoItemType[]
 }
 export const useTodos = (): TodosHook => {
-  const { data: result } = useSuspenseQuery<AxiosResponse<TodosResponse>, unknown>(['todos'], todoApi.getTodos)
+  const { data: result } = useSuspenseQuery<AxiosResponse<TodosResponse>, unknown, TodosResponse>(['todos'], todoApi.getTodos, { select: ({ data }) => data })
 
-  return { todos: result.data.data }
+  return { todos: result.data }
 }
