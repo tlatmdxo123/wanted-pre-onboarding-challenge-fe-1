@@ -3,5 +3,6 @@ import { TodoCreateResponse, TodoCreateType, TodosResponse } from '@components/T
 
 export const todoApi = {
   getTodos: async () => await fetcher.get<TodosResponse>('/todos'),
+  getTodo: async (id: string) => await fetcher.get<TodoCreateResponse>(`/todos/${id}`),
   createTodo: async (todo: TodoCreateType) => await fetcher.post<TodoCreateResponse>('/todos', todo)
 }

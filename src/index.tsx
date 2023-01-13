@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Auth/>
   },
   {
-    path: '/todos',
+    path: '/todos/:todoId?',
     element: <Todo/>
   }
 ])

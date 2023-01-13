@@ -4,6 +4,7 @@ import TodoListView from '@components/Todo/TodoList/TodoListView'
 
 const TodoList: FC = () => {
   const { todos } = useTodos()
+
   return <TodoListView list={todos}/>
 }
 
